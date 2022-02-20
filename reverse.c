@@ -70,6 +70,9 @@ int reverse_file(char* input_file_name) {
     return 0;
 }
 
-int main(int argv, char** argc) {
-    reverse_file(argc[1]);
+int main(int argc, char** argv) {
+    for (int i = 0; i < argc; i++) {
+        printf("reversing %s\n", argv[i]);
+        reverse_file(argv[i]);
+    }
 }
