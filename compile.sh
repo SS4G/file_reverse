@@ -1,1 +1,2 @@
-gcc reverse.c -o reverse
+#gcc reverse.c -o reverse
+g++ reverse.cpp -o reverse
